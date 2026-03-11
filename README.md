@@ -1,256 +1,167 @@
 # Story Spoiler – QA Automation Project
 
+[![Build Status](https://github.com/KristiyanGeorgiev1996/Story-Spoiler/actions/workflows/tests.yml/badge.svg)](https://github.com/KristiyanGeorgiev1996/Story-Spoiler/actions/workflows/tests.yml)
 ![QA Automation](https://img.shields.io/badge/QA-Automation-blue)
-![Language](https://img.shields.io/badge/Language-C%23-purple)
-![Framework](https://img.shields.io/badge/.NET-Framework-512BD4)
-![Testing](https://img.shields.io/badge/Testing-Selenium-green)
-![Test Framework](https://img.shields.io/badge/Test%20Framework-NUnit-orange)
-![CI/CD](https://img.shields.io/badge/CI-CD-black)
+![C#](https://img.shields.io/badge/Language-C%23-purple)
+![.NET](https://img.shields.io/badge/.NET-Framework-512BD4)
+![Selenium](https://img.shields.io/badge/Testing-Selenium-green)
+![NUnit](https://img.shields.io/badge/Test%20Framework-NUnit-orange)
 ![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF)
 
 ---
 
 # 📖 Project Overview
 
-**Story Spoiler** is a QA Automation project created to demonstrate automated testing practices for a web application that reveals spoiler information for stories, movies, and books.
+**Story Spoiler** is a QA Automation project that demonstrates automated testing practices for a web application which reveals spoilers for stories, movies, and books.  
 
-The project focuses on validating key user interactions such as searching for stories and displaying spoiler content. Automated tests ensure that the application behaves correctly and consistently.
+The project validates key user interactions such as searching for stories and displaying spoiler content. Automated tests ensure the application behaves correctly and consistently.  
 
-The test suite is integrated into a **CI/CD pipeline using GitHub Actions**, which automatically executes the tests whenever changes are pushed to the repository.
-
-This project demonstrates practical skills in:
-
-* UI Test Automation
-* Automated Testing Frameworks
-* Continuous Integration
-* Software Quality Assurance
-
-## Documentation
-
-- [Testing Strategy](docs/testing-strategy.md)
-- [CI/CD Pipeline](docs/ci-cd-pipeline.md)
-- [Full Test Cases](docs/test-cases.md)
+Integrated with **GitHub Actions**, the tests run automatically whenever changes are pushed.
 
 ---
 
 # 🧪 Assignment Description
 
-## Objective
+**Objective:** Implement automated UI tests to validate functionality of a story spoiler application.  
 
-The objective of this assignment is to design and implement an automated testing project that validates the functionality of a web application for searching and displaying story spoilers.
+**Functional Requirements:**
+- Search for a story, movie, or book  
+- Reveal spoiler information  
+- Handle invalid search queries  
+- Prevent empty searches  
+- Display relevant results for valid queries  
 
-The automated tests should verify the correct behavior of the application when interacting with different types of user input.
-
----
-
-## Functional Requirements
-
-The application should allow users to:
-
-* search for a story, movie, or book
-* reveal spoiler information
-* handle invalid search queries
-* prevent empty searches
-* display relevant results for valid queries
-
----
-
-## Testing Objectives
-
-The automated tests should verify that:
-
-* the search functionality works correctly
-* spoiler information is displayed properly
-* invalid inputs are handled correctly
-* the system behaves consistently under different scenarios
+**Testing Goals:** Ensure correct system behavior across multiple scenarios, covering both positive and negative cases.
 
 ---
 
 # ⭐ Features
 
-The project includes the following features:
-
-* UI automated tests
-* Selenium WebDriver integration
-* NUnit testing framework
-* automated test execution
-* CI/CD pipeline
-* GitHub Actions integration
-* automated validation on every commit
+- Automated UI tests using Selenium WebDriver  
+- NUnit test framework  
+- Page Object Model (POM) structure  
+- CI/CD pipeline using GitHub Actions  
+- Automated validation on every commit  
 
 ---
 
 # 🛠 Technologies Used
 
-| Technology         | Description               |
-| ------------------ | ------------------------- |
-| C#                 | Main programming language |
-| .NET               | Development framework     |
-| Selenium WebDriver | UI automation framework   |
-| NUnit              | Testing framework         |
-| Git                | Version control           |
-| GitHub             | Repository hosting        |
-| GitHub Actions     | CI/CD automation          |
+| Technology | Description |
+|------------|-------------|
+| C# | Main programming language |
+| .NET | Development framework |
+| Selenium WebDriver | UI automation |
+| NUnit | Testing framework |
+| Git | Version control |
+| GitHub | Repository hosting |
+| GitHub Actions | CI/CD automation |
 
 ---
 
 # 📂 Project Structure
 
-The project follows a structured layout based on common automation testing practices.
-
-```id="0fny3k"
+```text
 Story-Spoiler
 │
 ├── .github
 │   └── workflows
-│       └── tests.yml           # CI/CD pipeline
-│
-├── StorySpoiler.Tests           # Основният тестов проект
-│   ├── Tests                    # Конкретните тестове
-│   ├── Pages                    # Page Object Model класове
-│   └── Utilities                # Помощни класове и функции
-│
-├── docs                        # Допълнителна документация
+│       └── tests.yml
+├── StorySpoiler.Tests
+│   ├── Tests
+│   ├── Pages
+│   └── Utilities
+├── docs
 │   ├── testing-strategy.md
-│   └── ci-cd-pipeline.md
-│
+│   ├── ci-cd-pipeline.md
+│   └── test-cases.md
 ├── README.md
 ├── LICENSE
 ├── .gitignore
 └── StorySpoiler.sln
 ```
 
-### Folder Description
-
-**.github/workflows**
-
-Contains the configuration for the CI/CD pipeline.
-
-**StorySpoiler.Tests**
-
-The main testing project that contains the automated tests.
-
-**Tests**
-
-Contains the actual test scenarios.
-
-**Pages**
-
-Contains Page Object Model classes representing UI elements.
-
-**Utilities**
-
-Helper classes used across the testing project.
-
 ---
 
 # 🧾 Test Scenarios
 
-The project currently covers the following testing scenarios.
+The project currently covers the following testing scenarios:
 
 ### Test Case 1 – Search with Valid Input
-User enters a valid story name.
+User enters a valid story name.  
 **Expected Result:** The system displays the corresponding spoiler.
 
 ### Test Case 2 – Search with Invalid Input
-User enters a non-existing story.
+User enters a non-existing story.  
 **Expected Result:** The system displays a message indicating that no results were found.
 
 ### Test Case 3 – Empty Search
-User attempts to search without entering any text.
+User attempts to search without entering text.  
 **Expected Result:** The system prevents the search action and shows a validation message.
 
 ### Test Case 4 – Spoiler Visibility
-User selects a story result.
+User selects a story result.  
 **Expected Result:** The system reveals the spoiler information.
+
+- [Full Test Cases](docs/test-cases.md)
 
 ---
 
 # ⚙ CI/CD Pipeline
 
-The project uses a **Continuous Integration pipeline** configured with GitHub Actions.
+The project uses GitHub Actions to automatically run tests on **push** or **pull requests** to `main`.  
 
-The pipeline automatically runs when:
+**Pipeline Steps:**
+1. Checkout repository  
+2. Install dependencies  
+3. Build project  
+4. Execute automated tests  
+5. Report test results  
 
-* code is pushed to the repository
-* a pull request is created
-
-### Pipeline Steps
-
-1. Checkout repository
-2. Install project dependencies
-3. Build the project
-4. Execute automated tests
-5. Report test results
-
-This ensures that tests are automatically executed whenever changes are made to the codebase.
+- [CI/CD Pipeline Details](docs/ci-cd-pipeline.md)
 
 ---
 
 # ▶ Running the Project Locally
 
-To run the tests locally follow these steps.
-
-### 1. Clone the repository
-
-```id="tv9t9b"
-git clone https://github.com/your-username/Story-Spoiler.git
+1. Clone the repository:
+```bash
+git clone https://github.com/KristiyanGeorgiev1996/Story-Spoiler.git
 ```
 
-### 2. Open the solution
+2. Open the solution in Visual Studio:  
+   `StorySpoiler.sln`
 
-Open the solution file in Visual Studio.
+3. Restore dependencies (NuGet packages)
 
-```id="0akrtq"
-StorySpoiler.sln
+4. Run tests using Visual Studio Test Explorer, NUnit Runner, or command line:
+```bash
+dotnet test StorySpoiler.Tests/StorySpoiler.Tests.csproj
 ```
-
-### 3. Restore dependencies
-
-Visual Studio will automatically restore the required NuGet packages.
-
-### 4. Run the tests
-
-Tests can be executed using:
-
-* Visual Studio Test Explorer
-* NUnit Runner
-* Command line
 
 ---
 
 # 🚀 Future Improvements
 
-The project can be extended with the following improvements:
-
-* additional automated test scenarios
-* integration with test reporting tools
-* parallel test execution
-* Selenium Grid integration
-* test data management
-* enhanced CI/CD pipeline
+- Add more automated test scenarios
+- Parallel test execution
+- Integration with test reporting tools (Allure, ReportPortal)
+- Enhanced CI/CD pipeline
+- Test data management improvements
 
 ---
 
 # 📚 Learning Purpose
 
-This project was created for educational purposes and demonstrates concepts related to:
+This project demonstrates QA Automation concepts:
 
-* QA Automation
-* UI Test Automation
-* Test Framework Design
-* Continuous Integration
+- UI Test Automation
+- Test Framework Design
+- Continuous Integration / Continuous Deployment
+- Software Quality Assurance best practices
 
 ---
 
 # 👨‍💻 Author
 
-Kristiyan Georgiev
-
-QA Automation Enthusiast
-
-MIT License
-
-Copyright (c) 2026 Kristiyan Georgiev
-
-Permission is hereby granted, free of charge, to any person obtaining a copy...
+Kristiyan Georgiev – QA Automation Enthusiast
