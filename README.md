@@ -264,3 +264,9 @@ This project was created for educational purposes and demonstrates concepts rela
 Kristiyan Georgiev
 
 QA Automation Enthusiast
+
+MIT License
+
+Copyright (c) 2026 Kristiyan Georgiev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
