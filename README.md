@@ -25,6 +25,11 @@ This project demonstrates practical skills in:
 * Continuous Integration
 * Software Quality Assurance
 
+## Documentation
+
+- [Testing Strategy](docs/testing-strategy.md)
+- [CI/CD Pipeline](docs/ci-cd-pipeline.md)
+
 ---
 
 # 🧪 Assignment Description
