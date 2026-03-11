@@ -148,23 +148,20 @@ Helper classes used across the testing project.
 The project currently covers the following testing scenarios.
 
 ### Test Case 1 – Search with Valid Input
-
 User enters a valid story name.
-
-Expected Result:
-
-The system displays the corresponding spoiler.
-
----
+**Expected Result:** The system displays the corresponding spoiler.
 
 ### Test Case 2 – Search with Invalid Input
-
 User enters a non-existing story.
+**Expected Result:** The system displays a message indicating that no results were found.
 
-Expected Result:
+### Test Case 3 – Empty Search
+User attempts to search without entering any text.
+**Expected Result:** The system prevents the search action and shows a validation message.
 
-The system displays a message indicating that no results were found.
-
+### Test Case 4 – Spoiler Visibility
+User selects a story result.
+**Expected Result:** The system reveals the spoiler information.
 ---
 
 ### Test Case 3 – Empty Search
