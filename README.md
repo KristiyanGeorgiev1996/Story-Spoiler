@@ -7,6 +7,7 @@
 ![Test Framework](https://img.shields.io/badge/Test%20Framework-NUnit-orange)
 ![CI/CD](https://img.shields.io/badge/CI-CD-black)
 ![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/KristiyanGeorgiev1996/Story-Spoiler/tests.yml?branch=main)](https://github.com/KristiyanGeorgiev1996/Story-Spoiler/actions/workflows/tests.yml)
 
 ---
 
