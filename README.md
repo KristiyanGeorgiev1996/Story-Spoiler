@@ -29,6 +29,7 @@ This project demonstrates practical skills in:
 
 - [Testing Strategy](docs/testing-strategy.md)
 - [CI/CD Pipeline](docs/ci-cd-pipeline.md)
+- [Full Test Cases](docs/test-cases.md)
 
 ---
 
