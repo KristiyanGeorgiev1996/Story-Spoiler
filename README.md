@@ -162,25 +162,6 @@ User attempts to search without entering any text.
 ### Test Case 4 – Spoiler Visibility
 User selects a story result.
 **Expected Result:** The system reveals the spoiler information.
----
-
-### Test Case 3 – Empty Search
-
-User attempts to search without entering any text.
-
-Expected Result:
-
-The system prevents the search action and shows a validation message.
-
----
-
-### Test Case 4 – Spoiler Visibility
-
-User selects a story result.
-
-Expected Result:
-
-The system reveals the spoiler information.
 
 ---
 
