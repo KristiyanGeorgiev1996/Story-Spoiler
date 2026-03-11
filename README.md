@@ -1,6 +1,5 @@
 # Story Spoiler – QA Automation Project
 
-[![Build Status](https://github.com/KristiyanGeorgiev1996/Story-Spoiler/actions/workflows/tests.yml/badge.svg)](https://github.com/KristiyanGeorgiev1996/Story-Spoiler/actions/workflows/tests.yml)
 ![QA Automation](https://img.shields.io/badge/QA-Automation-blue)
 ![C#](https://img.shields.io/badge/Language-C%23-purple)
 ![.NET](https://img.shields.io/badge/.NET-Framework-512BD4)
