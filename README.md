@@ -97,14 +97,20 @@ Story-Spoiler
 │
 ├── .github
 │   └── workflows
-│       └── tests.yml
+│       └── tests.yml           # CI/CD pipeline
 │
-├── StorySpoiler.Tests
-│   ├── Tests
-│   ├── Pages
-│   └── Utilities
+├── StorySpoiler.Tests           # Основният тестов проект
+│   ├── Tests                    # Конкретните тестове
+│   ├── Pages                    # Page Object Model класове
+│   └── Utilities                # Помощни класове и функции
+│
+├── docs                        # Допълнителна документация
+│   ├── testing-strategy.md
+│   └── ci-cd-pipeline.md
 │
 ├── README.md
+├── LICENSE
+├── .gitignore
 └── StorySpoiler.sln
 ```
 
