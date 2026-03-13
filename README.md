@@ -66,7 +66,7 @@ Story-Spoiler
 ├── .github
 │   └── workflows
 │       └── tests.yml
-├── StorySpoiler.Tests
+├── Foody
 │   ├── Tests
 │   ├── Pages
 │   └── Utilities
