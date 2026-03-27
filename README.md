@@ -69,7 +69,7 @@ Story-Spoiler
 │
 ├── .github
 │   └── workflows
-│       └── tests.yml
+│       └── ci.yml
 ├── Foody
 │   ├── Tests
 │   ├── Pages
