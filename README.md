@@ -71,9 +71,11 @@ Story-Spoiler
 │   └── workflows
 │       └── ci.yml
 ├── Foody
-│   ├── Tests
-│   ├── Pages
-│   └── Utilities
+│   ├── Models
+│   │   ├── ApiResponseDTO.cs
+│   │   ├── StoryDTO.cs
+│   ├── Spoiler.csproj
+│   └── UnitTest1.cs
 ├── docs
 │   ├── testing-strategy.md
 │   ├── ci-cd-pipeline.md
