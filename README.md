@@ -9,6 +9,7 @@
 ![.NET](https://img.shields.io/badge/.NET-Framework-512BD4)
 ![Selenium](https://img.shields.io/badge/Testing-Selenium-green)
 ![NUnit](https://img.shields.io/badge/Test%20Framework-NUnit-orange)
+<img src="https://img.shields.io/github/repo-size/KristiyanGeorgiev1996/Story-Spoiler">
 ![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF)
 
 ---
