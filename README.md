@@ -171,4 +171,3 @@ This project demonstrates QA Automation concepts:
 # 👨‍💻 Author
 
 Kristiyan Georgiev – QA Automation Enthusiast
-
